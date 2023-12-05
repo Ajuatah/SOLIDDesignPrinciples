@@ -28,6 +28,8 @@ namespace OpenClosed
             return base.GetInvoiceDiscount(amount) - 40;
         }
     }
+
+    // new invoice type does not affect existing code
     public class RecurringInvoice : Invoice
     {
         public override double GetInvoiceDiscount(double amount)

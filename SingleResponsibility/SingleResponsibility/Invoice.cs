@@ -14,6 +14,7 @@ namespace SingleResponsibility
         private MailSender emailSender;
         public Invoice()
         {
+            // Initialize the dependencies
             fileLogger = new Logger();
             emailSender = new MailSender();
         }
